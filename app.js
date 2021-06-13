@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 const mongoose = require("mongoose");
 // const bodyparser = require("body-parser");
-const port = 80;
+const port = process.env.PORT || 80;
 
 // Connecting with mongoose
 mongoose.connect("mongodb://localhost/harshCreationsHireMeData", {useNewUrlParser: true, useUnifiedTopology: true});
