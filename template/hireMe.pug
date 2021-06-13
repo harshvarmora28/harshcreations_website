@@ -1,0 +1,24 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/style_hireMe.css
+
+block content 
+    .container
+      h2 Hire me for your Website Now!
+      p Fill out this form Now! I will mail you back as soon as possible
+      form#contact(action='/hireme' method='post')
+        label(for='name') Name
+        input#name(type='text' name='name' placeholder='Enter your Full Name')
+        label(for='email') Email
+        input#email(type='email' name='email' placeholder='Enter your E-mail')
+        label(for='country') Country
+        input#country(type='text' name='country' placeholder='Enter your Country')
+        label(for='purposeOfWebsite') Purpose
+        textarea#purposeOfWebsite(name='purposeOfWebsite' cols='30' rows='10' placeholder='Enter the purpose of your Website')
+        button.subBtn Submit
+    
+
+
+

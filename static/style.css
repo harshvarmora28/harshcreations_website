@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #111827;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo img{
+    width: 55px;
+    margin: 7px 14px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#links ul{
+    display: flex;
+}
+#links ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #969aa1;
+    display: block;
+    padding: 0px 13px;
+    margin: 0px 3px;
+}
+#navbar ul li a:hover{
+    /* color: #3b82f6; */
+    color: white;
+}
+#about{
+   padding: 0px 328px;
+   height: 492px;
+}
+#quotes img{
+    width: 35px;
+    display: block;
+    margin: 37px auto;
+    margin-bottom: 32px;
+    margin-top: 93px;
+}
+#about p{
+    color: #969aa1;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 13px;
+    font-size: 1.105rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 28px;
+
+}
+#myWork{
+    display: flex;
+    justify-content: center;
+    
+}
+#myWork #heading p{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.headingPara{
+    display: flex;
+    justify-content: center;
+}
+#headingPara{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    margin: 0px auto;
+    color: #969aa1;
+    font-size: 0.94rem;
+    margin-bottom: 60px;
+}
+/* #works{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#works a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 45px;
+    width: 100px;
+    color: white;
+    background-color: #172133;
+    margin: 0px 38px;
+    margin-top: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px #232d43cc;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+}
+#works a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px #232d43cc;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    transform: translateY(2px);
+} */
+#line img{
+    width: 50px;
+    display: block;
+    margin: 0px auto;
+}
+#myName p{
+    color: white;
+    font-size: 0.95rem;
+    font-family:monospace;
+    letter-spacing: 2px;
+    font-weight: 700px;
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 9px;
+}
+#myProfession p{
+    display: block;
+    margin: 0px auto;
+    color: #8c8f96;
+    font-size: 0.92rem;
+    line-height: 14px;
+}
+#websiteGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+#websiteGrid a{
+    text-decoration: none;
+}
+.item{
+    background-color: #111827;
+    /* background-color: bisque; */
+    border: 1px solid rgba(31,41,55);
+    border-radius: 0.5rem;
+    margin: 20px;
+    height: 66px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.item:hover{
+    border: 1px solid #2d394e;
+}
+.item .img img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.item .webName p{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+
+}
+/* .item .webType p{
+    color: #8c8f96;
+} */
+#footer{
+    display: flex;
+    margin-top: 52px;
+    justify-content: center;
+    align-items: center;
+
+}
+#footerLogo img{
+    width: 55px;
+    margin: 7px 1px;
+}
+#footer p{
+   color: #969aa1;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+   display: block;
+   margin: auto 0px;
+}
+#verticalSeperator img{
+    width: 44px;
+    display: block;
+    margin: auto 0px;
+    opacity: 80%;
+}
+
+
+/* Responsiveness for mobile*/
+@media only screen and (max-width: 800px){
+    #about {
+        padding: 0px 22px;
+    }
+    #headingPara{
+        padding: 0px 22px;
+        text-align: center;
+    }
+    #footer{
+        padding: 0px 22px;
+    }
+    #footer p{
+        font-size: 0.73rem;
+    }
+    #footerLogo img{
+        width: 35px;
+    }
+    #verticalSeperator img{
+        width: 35px;
+    }
+    #logo img{
+        width: 44px;
+        margin-right: 7px;
+        margin-left: 1px;
+    }
+    #navbar ul li a{
+        padding: 0px 0px;
+        margin: 0px 8px;
+        font-size: 0.935rem;
+    }
+    #navbar{
+        justify-content: center;
+    }
+}
+
+/* Responsiveness for tablet */
+@media only screen and (min-width: 800px) and (max-width: 900px){
+    #about{
+        padding: 0px 44px;
+        text-align: center;
+    }
+}
